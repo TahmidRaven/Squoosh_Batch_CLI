@@ -1,4 +1,8 @@
 #!/bin/bash
+# Switching to node16h
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+nvm use 16 > /dev/null
 
 export NODE_OPTIONS="--no-experimental-fetch"
 
